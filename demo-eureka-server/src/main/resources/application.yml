@@ -1,0 +1,41 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8081/eureka/,http://peer2:8082/eureka/,http://peer3:8083/eureka/
+#      defaultZone: http://peer1:8081/eureka/
+
+---
+spring:
+  profiles: peer1
+  application:
+    name: peer1
+eureka:
+  instance:
+    hostname: peer1
+
+---
+spring:
+  profiles: peer2
+  application:
+    name: peer2
+eureka:
+  instance:
+    hostname: peer2
+
+---
+spring:
+  profiles: peer3
+  application:
+    name: peer3
+eureka:
+  instance:
+    hostname: peer3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS
