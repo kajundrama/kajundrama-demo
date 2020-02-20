@@ -1,0 +1,13 @@
+package me.kajundrama.demostreamingservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoStreamingServiceApplication {
+
+  public static void main(String[] args) {
+    SpringApplication.run(DemoStreamingServiceApplication.class, args);
+  }
+
+}
