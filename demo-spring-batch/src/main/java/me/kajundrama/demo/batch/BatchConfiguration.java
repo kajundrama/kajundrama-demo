@@ -62,6 +62,12 @@ public class BatchConfiguration {
   // end::readerwriterprocessor[]
 
   // tag::jobstep[]
+
+  /**
+   * Job을 빌드한다.
+   * @param listener
+   * @return
+   */
   @Bean
   public Job importUserJob(JobCompletionNotificationListener listener) {
     return jobBuilderFactory.get("importUserJob")
