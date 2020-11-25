@@ -78,6 +78,10 @@ public class BatchConfiguration {
         .build();
   }
 
+  /**
+   * step01 스텝을 정의합니다.
+   * @return
+   */
   @Bean
   public Step step1(FlatFileItemReader reader, JdbcBatchItemWriter writer, PersonItemProcessor processor) {
     return stepBuilderFactory.get("step1")
