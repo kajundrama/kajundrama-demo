@@ -13,6 +13,11 @@ import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
+/**
+ * <pre>
+ *   Kafka Consumer 애제 클래스
+ * </pre>
+ */
 @Service
 @RequiredArgsConstructor
 @Slf4j
