@@ -6,11 +6,6 @@
 	<artifactId>kajundrama-study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<modules>
-		<module>demo-spring-batch</module>
-    <module>demo-spring-boot-kafka-1.5.12</module>
-  </modules>
-
 	<name>kajundrama-study</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
