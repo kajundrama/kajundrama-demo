@@ -20,7 +20,7 @@ public class EmailServiceTest {
     String to = "kajundrama@gmail.com";
     String topic = "Mail Send Test From SpringBoot";
     String body = "This message is from 'Demo Spring Boot Mail App'";
-    emailService.send(from, to, body, topic);
+    //emailService.send(from, to, body, topic);
   }
 
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.22.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+
+  <groupId>me.kajundrama</groupId>
+  <artifactId>kajundrama-spring-boot-1.5.22-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>../demo-eureka-server-1.5.22</module>
+    <module>../demo-eureka-client-1.5.22</module>
+    <module>../demo-spring-cloud-config-server-1.5.22</module>
+    <module>../demo-spring-cloud-config-client-1.5.22</module>
+    <module>../demo-spring-boot-kafka-1.5.22</module>
+    <module>../demo-spring-batch-1.5.22</module>
+  </modules>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <spring-boot-admin.version>1.5.7</spring-boot-admin.version>
+    <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-freemarker</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/kajundrama/kajundrama-study</url>
+    </repository>
+  </distributionManagement>
+
+</project>
