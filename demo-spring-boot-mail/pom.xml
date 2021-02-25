@@ -6,12 +6,12 @@
   <parent>
     <groupId>me.kajundrama</groupId>
     <artifactId>kajundrama-spring-boot-lastest-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
     <relativePath/>
   </parent>
   <groupId>me.kajundrama</groupId>
   <artifactId>demo-spring-boot-mail</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.6-SNAPSHOT</version>
   <name>demo-spring-boot-mail</name>
   <description>Demo project for Spring Boot</description>
   <properties>

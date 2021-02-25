@@ -7,7 +7,7 @@
   <parent>
     <groupId>me.kajundrama</groupId>
     <artifactId>kajundrama-min-dependency-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
@@ -18,7 +18,7 @@
       <plugin>
         <groupId>me.kajundrama</groupId>
         <artifactId>demo-maven-plugin</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.6-SNAPSHOT</version>
         <configuration>
           <url>http://localhost:8080</url>
         </configuration>

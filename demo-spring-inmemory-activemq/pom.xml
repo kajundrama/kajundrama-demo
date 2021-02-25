@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>me.kajundrama</groupId>
 		<artifactId>kajundrama-spring-boot-lastest-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.6-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>me.kajundrama</groupId>
 	<artifactId>demo-spring-inmemory-activemq</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<name>demo-spring-inmemory-activemq</name>
 	<description>Demo Inmemory ActiveMQ project for Spring Boot</description>
 

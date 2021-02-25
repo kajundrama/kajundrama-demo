@@ -6,12 +6,12 @@
   <parent>
     <groupId>me.kajundrama</groupId>
     <artifactId>kajundrama-spring-boot-1.5.22-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>me.kajundrama</groupId>
   <artifactId>demo-spring-cloud-config-server-1.5.22</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.6-SNAPSHOT</version>
   <name>demo-spring-cloud-config-server</name>
   <description>Demo project for Spring Boot</description>
 

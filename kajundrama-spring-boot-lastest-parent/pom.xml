@@ -11,7 +11,7 @@
 
 	<groupId>me.kajundrama</groupId>
 	<artifactId>kajundrama-spring-boot-lastest-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>kajundrama-spring-boot-lastest-parent</name>
 	<description>Demo project for Spring Boot</description>

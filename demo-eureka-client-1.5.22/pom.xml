@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>me.kajundrama</groupId>
 		<artifactId>kajundrama-spring-boot-1.5.22-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.6-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
