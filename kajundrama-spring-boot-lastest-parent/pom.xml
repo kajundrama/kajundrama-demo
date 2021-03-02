@@ -11,17 +11,18 @@
 
 	<groupId>me.kajundrama</groupId>
 	<artifactId>kajundrama-spring-boot-lastest-parent</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>0.0.9-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>kajundrama-spring-boot-lastest-parent</name>
 	<description>Demo project for Spring Boot</description>
 
 	<modules>
-		<module>../demo-spring-beans-lifecycle</module>
-		<module>../demo-spring-boot-mail</module>
-		<module>../demo-spring-inmemory-activemq</module>
-		<module>../demo-streaming-service</module>
-		<module>../demo-spring-boot-kafka</module>
+		<module>demo-spring-boot-beans-lifecycle</module>
+		<module>demo-spring-boot-mail</module>
+		<module>demo-spring-inmemory-activemq</module>
+		<module>demo-streaming-service</module>
+		<module>demo-spring-boot-kafka</module>
+		<module>demo-spring-boot-security</module>
 	</modules>
 
 	<properties>

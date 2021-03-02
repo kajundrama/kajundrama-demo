@@ -14,16 +14,16 @@
 
   <groupId>me.kajundrama</groupId>
   <artifactId>kajundrama-spring-boot-1.5.22-parent</artifactId>
-  <version>0.0.6-SNAPSHOT</version>
+  <version>0.0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>../demo-eureka-server-1.5.22</module>
-    <module>../demo-eureka-client-1.5.22</module>
-    <module>../demo-spring-cloud-config-server-1.5.22</module>
-    <module>../demo-spring-cloud-config-client-1.5.22</module>
-    <module>../demo-spring-boot-kafka-1.5.22</module>
-    <module>../demo-spring-batch-1.5.22</module>
+    <module>demo-eureka-server-1.5.22</module>
+    <module>demo-eureka-client-1.5.22</module>
+    <module>demo-spring-cloud-config-server-1.5.22</module>
+    <module>demo-spring-cloud-config-client-1.5.22</module>
+    <module>demo-spring-boot-kafka-1.5.22</module>
+    <module>demo-spring-batch-1.5.22</module>
   </modules>
 
   <properties>
