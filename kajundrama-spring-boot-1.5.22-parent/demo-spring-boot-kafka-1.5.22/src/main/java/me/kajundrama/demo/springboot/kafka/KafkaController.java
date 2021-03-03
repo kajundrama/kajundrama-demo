@@ -19,10 +19,11 @@ public class KafkaController {
 
   /**
    * curl -X GET http://localhost:8081/kafka/publish/helloKafka
+   *
    * @param message
    */
   @GetMapping("/publish/{message}")
-  public void producer(@PathVariable String message){
+  public void producer(@PathVariable String message) {
     log.info(">>> start event publish");
     producer.send(message);
   }

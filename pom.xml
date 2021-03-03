@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>me.kajundrama</groupId>
-	<artifactId>kajundrama-study</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>kajundrama-demo</artifactId>
+  <description>Demo project for Spring Boot</description>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/kajundrama/kajundrama-demo</url>
+    </repository>
+  </distributionManagement>
+  <groupId>me.kajundrama</groupId>
 
-	<name>kajundrama-study</name>
-	<description>Demo project for Spring Boot</description>
-	<packaging>pom</packaging>
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>kajundrama-spring-boot-lastest-parent</module>
+    <module>kajundrama-spring-boot-1.5.22-parent</module>
+    <module>kajundrama-min-dependency-parent</module>
+  </modules>
+  <name>kajundrama-demo</name>
 
-	<modules>
-		<module>kajundrama-spring-boot-lastest-parent</module>
-		<module>kajundrama-spring-boot-1.5.22-parent</module>
-		<module>kajundrama-min-dependency-parent</module>
-	</modules>
+  <packaging>pom</packaging>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
 
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/kajundrama/kajundrama-study</url>
-		</repository>
-	</distributionManagement>
+  <version>1.0.1-SNAPSHOT</version>
 
 </project>

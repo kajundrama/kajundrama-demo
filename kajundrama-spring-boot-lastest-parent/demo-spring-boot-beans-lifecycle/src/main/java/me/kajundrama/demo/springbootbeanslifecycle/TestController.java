@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
   @Autowired
+  ApplicationContext applicationContext;
+  @Autowired
   private DefaultScopeBean defaultScopeBean;
   @Autowired
   private SingletonScopeBean singletonScopeBean;
@@ -22,8 +24,7 @@ public class TestController {
   private PrototypeScopeBean prototypeScopeBean;
   @Autowired
   private ScopeBeanWrapper scopeBeanWrapper;
-  @Autowired
-  ApplicationContext applicationContext;
+
   @GetMapping("/")
   public void test() {
 

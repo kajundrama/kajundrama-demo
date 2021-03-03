@@ -23,13 +23,11 @@ import org.springframework.core.io.ClassPathResource;
 public class BatchConfiguration {
 
   @Autowired
+  public DataSource dataSource;
+  @Autowired
   private JobBuilderFactory jobBuilderFactory;
-
   @Autowired
   private StepBuilderFactory stepBuilderFactory;
-
-  @Autowired
-  public DataSource dataSource;
 
   @Bean
   public FlatFileItemReader<Person> reader() {
@@ -37,7 +35,7 @@ public class BatchConfiguration {
     reader.setResource(new ClassPathResource("sample-data.csv"));
     reader.setLineMapper(new DefaultLineMapper<Person>() {{
       setLineTokenizer(new DelimitedLineTokenizer() {{
-        setNames(new String[] { "firstName", "lastName" });
+        setNames(new String[]{"firstName", "lastName"});
       }});
       setFieldSetMapper(new BeanWrapperFieldSetMapper<Person>() {{
         setTargetType(Person.class);
@@ -54,7 +52,8 @@ public class BatchConfiguration {
   @Bean
   public JdbcBatchItemWriter<Person> writer() {
     JdbcBatchItemWriter<Person> writer = new JdbcBatchItemWriter<Person>();
-    writer.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<Person>());
+    writer.setItemSqlParameterSourceProvider(
+        new BeanPropertyItemSqlParameterSourceProvider<Person>());
     writer.setSql("INSERT INTO people (first_name, last_name) VALUES (:firstPName, :lastName)");
     writer.setDataSource(dataSource);
     return writer;
@@ -65,6 +64,7 @@ public class BatchConfiguration {
 
   /**
    * Job을 빌드한다.
+   *
    * @param listener
    * @return
    */
@@ -80,12 +80,14 @@ public class BatchConfiguration {
 
   /**
    * step01 스텝을 정의합니다.
+   *
    * @return
    */
   @Bean
-  public Step step1(FlatFileItemReader reader, JdbcBatchItemWriter writer, PersonItemProcessor processor) {
+  public Step step1(FlatFileItemReader reader, JdbcBatchItemWriter writer,
+      PersonItemProcessor processor) {
     return stepBuilderFactory.get("step1")
-        .<Person, Person> chunk(10)
+        .<Person, Person>chunk(10)
         .reader(reader)
         .processor(processor)
         .writer(writer)

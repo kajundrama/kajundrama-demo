@@ -30,7 +30,8 @@ public class StreamingController {
   }
 
   @GetMapping("/download")
-  public StreamingResponseBody download(HttpServletRequest req, @RequestParam("fileName") String fileName) throws Exception {
+  public StreamingResponseBody download(HttpServletRequest req,
+      @RequestParam("fileName") String fileName) throws Exception {
 //    InputStream is = this.getClass().getResourceAsStream(fileName);
 //    System.out.println("file : " + is);
     File file = new ClassPathResource(fileName).getFile();
@@ -42,7 +43,8 @@ public class StreamingController {
   }
 
   @GetMapping("/download2")
-  public void download2(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  public void download2(HttpServletRequest request, HttpServletResponse response)
+      throws IOException {
     File file = new ClassPathResource("sample.mp4").getFile();
     System.out.println("file2 : " + file.getName() + ", " + file.exists());
     response.setContentType(context.getMimeType(file.getName()));

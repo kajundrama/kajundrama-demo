@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoSpringInmemoryActivemqApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoSpringInmemoryActivemqApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(DemoSpringInmemoryActivemqApplication.class, args);
+  }
 
 }

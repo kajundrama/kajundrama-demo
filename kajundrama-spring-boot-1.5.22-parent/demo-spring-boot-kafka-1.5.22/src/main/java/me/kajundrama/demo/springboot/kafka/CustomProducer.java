@@ -20,22 +20,25 @@ public class CustomProducer {
   private KafkaProducer<String, String> producer = null;
 
   @PostConstruct
-  public void build(){
+  public void build() {
     Properties properties = new Properties();
     properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, config.getBootstrapServers());
-    properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, config.getProducer().getKeySerializer());
-    properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, config.getProducer().getValueSerializer());
+    properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
+        config.getProducer().getKeySerializer());
+    properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
+        config.getProducer().getValueSerializer());
     producer = new KafkaProducer<>(properties);
   }
 
   public void send(String message) {
-    ProducerRecord<String, String> record = new ProducerRecord<>(config.getTemplate().getDefaultTopic(), message);
+    ProducerRecord<String, String> record = new ProducerRecord<>(
+        config.getTemplate().getDefaultTopic(), message);
 
     producer.send(record, new Callback() {
       @Override
       public void onCompletion(RecordMetadata metadata, Exception exception) {
         log.info("publish message: {}", message);
-        if (exception!=null){
+        if (exception != null) {
           log.info(exception.getMessage());
         }
       }

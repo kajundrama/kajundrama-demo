@@ -30,7 +30,6 @@ public class ProducerResource {
 
     jmsTemplate.convertAndSend(queue, message);
 
-
     return "Published Successfully!!";
   }
 }

@@ -11,7 +11,7 @@ class CustomProducerTest {
   private CustomProducer sut;
 
   @Test
-  void test1(){
+  void test1() {
     sut.send("this message sent from spring boot application!");
   }
 }

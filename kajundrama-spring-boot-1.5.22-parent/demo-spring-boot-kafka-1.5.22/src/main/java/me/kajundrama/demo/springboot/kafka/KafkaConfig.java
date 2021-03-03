@@ -16,17 +16,20 @@ public class KafkaConfig {
 
   @Data
   public static class Producer {
+
     private String keySerializer;
     private String valueSerializer;
   }
 
   @Data
   public static class Template {
+
     private String defaultTopic;
   }
 
   @Data
   public static class Consumer {
+
     private String groupId;
     private String enableAutoCommit;
     private String autoOffsetReset;

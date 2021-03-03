@@ -1,6 +1,6 @@
-# kajundrama-study
+# kajundrama-demo
 Demo Application using Spring Framework
 
 ```
-git clone https://github.com/kajundrama/kajundrama-study.git
+git clone https://github.com/kajundrama/kajundrama-demo.git
 ```
